@@ -300,18 +300,24 @@ width: 100%;
     left: 0px;
 }
 .features .container-b{
-    height: 85%;
+    height: 90%;
     width: 90%;
 }
 .features .container-b img{
     height: 100%;
 }
-.facts{padding: 20px;}
+.facts{
+    padding: 20px;}
 .facts .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap:20px ;
+}
+.fact{
+    padding:20px 20px;
+    width:110px ;
+    height:115px;
 }
 .sponsors{
     margin: 50px 0px;
