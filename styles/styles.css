@@ -284,6 +284,9 @@ width: 100%;
     height: 100%;
     width: 100%;
 }
+.main .container-b{
+    width: 100%;
+}
 .features{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -303,6 +306,7 @@ width: 100%;
 .features .container-b{
     height: 90%;
     width: 90%;
+    
 }
 .features .container-b img{
     height: 100%;
