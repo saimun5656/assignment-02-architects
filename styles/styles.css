@@ -19,7 +19,7 @@ img{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 90px;
-
+    padding-top: 20px;
 }
 .navbar h1{
     font-size: 35px;
@@ -56,6 +56,7 @@ img{
     font-weight:700;
     font-size:55px;
     line-height:60px;
+    margin-bottom: 20px;
    
 
 }
@@ -121,7 +122,6 @@ margin: 30px 0px 50px 0px;
 .features{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
     gap: 10px 120px;
    
 }
@@ -199,6 +199,8 @@ width: 100%;
     padding: 40px 30px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    height: 120px;
+    width: 135px;
 }
 
 .facts img{
@@ -250,5 +252,77 @@ width: 100%;
     text-align: center;
     color: #424242;
     margin-bottom: 100px;
+}
+/* Responsive */
+@media screen and (max-width:576px){
+ .navbar{
+  max-width: 93vw;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.navbar ul{
+    flex-direction: column;
+    position: relative;
+    left: -20px;
 
+    
+}
+.banner{
+    max-width: 93vw;
+}
+.main{
+    max-width: 93vw;
+}
+.main .section-a{
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.main .container-a{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+.features{
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.features .container-a{
+    max-width: 100%;
+}
+.experience{
+    padding: 30px 30px;
+    font-size: 29px;
+    width: 130px;
+    height: 45px;
+    top: -20px;
+    left: 0px;
+}
+.features .container-b{
+    height: 85%;
+    width: 90%;
+}
+.features .container-b img{
+    height: 100%;
+}
+.facts{padding: 20px;}
+.facts .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap:20px ;
+}
+.sponsors{
+    margin: 50px 0px;
+}
+.sponsors .container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 25px;
+
+}
+.footer{
+    max-width: 95vw;
+}
 }
