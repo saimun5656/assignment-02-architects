@@ -201,6 +201,12 @@ width: 100%;
     border-radius: 8px;
     height: 120px;
     width: 135px;
+    transition: transform 2s ease 0s;
+}
+.fact:hover{
+    transform: translate(30px ,-30px) rotate(360deg);
+    border: 2px solid rgb(218, 165, 32);
+    background-color: #ff8f0e4f;
 }
 
 .facts img{
