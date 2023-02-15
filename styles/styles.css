@@ -89,7 +89,7 @@ margin: 30px 0px 50px 0px;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     width: 682px;
-    height: 682px;
+   
 }
 .main .container-b{
     width: 400px;
@@ -162,23 +162,23 @@ margin-bottom: 10px;
 }
 .features .container-b {
     width: 36vw;
-    height: 810px;
+    height: 60.3vw;
 }
 .features .container-b img{
 height: 100%;
 width: 100%;
 }
 .experience{
-    padding: 40px;
+    padding: 25px 40px;
     background-color: #FF900E;
     border-radius: 8px;
     font-size: 30px;
     color: #ffffff;
-    height: 3.5vw;
-    width: 10.5vw;
+    height: 6vw;
+    width: 11vw;
     position: relative;
-    top: -200px;
-    left: 550px;
+    top: -8vw;
+    left: -4vw;
     
 }
 .experience p{
@@ -245,6 +245,53 @@ width: 100%;
     display: flex;
    justify-content: space-between;
 }
+/* architectures section ---------------------*/
+.architectures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.architectures .architecture-a, .architecture-d{
+    height: 35vw;
+    width: 40vw;
+}
+.architecture-a{
+    transition: transform 2s ease 0s;
+}
+.architectures:hover .architecture-a{
+    transform: translate(39vw, 37vw);
+}
+.architecture-d{
+    transition: transform 2s ease 0s;
+}
+
+.architectures:hover .architecture-d{
+    transform: translate(-41.5vw,-33.3vw);
+}
+
+.architectures button{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #131313;
+    color: white;
+}
+.architectures button:hover{
+    background-color: #FFFFFF;
+    color: #131313;
+}
+.architectures img{
+    height: 100%;
+    width: 100%;
+}
+
+.architecture-b{
+    font-size: 16px;
+   padding: 20vw 4vw 0vw 4vw;
+}
+.architecture-c{
+    padding: 20vw 4vw 0vw 4vw;
+}
 /* Footer Section------------- */
 .footer{
     max-width: 82vw;
@@ -259,7 +306,7 @@ width: 100%;
     color: #424242;
     margin-bottom: 100px;
 }
-/* Responsive */
+/* Responsive----------------------------------------- */
 @media screen and (max-width:576px){
  .navbar{
   max-width: 93vw;
@@ -271,8 +318,6 @@ width: 100%;
     flex-direction: column;
     position: relative;
     left: -20px;
-
-    
 }
 .banner{
     max-width: 93vw;
@@ -318,7 +363,8 @@ width: 100%;
     height: 100%;
 }
 .facts{
-    padding: 20px;}
+    padding: 20px;
+}
 .facts .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -337,9 +383,82 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px 25px;
-
 }
+.architecture-a{grid-area: ac-1;}
+.architecture-b{grid-area: ac-2;}
+.architecture-c{grid-area: ac-3;}
+.architecture-d{grid-area: ac-4;}
+
+.architectures{
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "ac-2"
+    "ac-1"
+    "ac-4"
+    "ac-3"
+    ;
+}
+.architecture-b{
+padding-top: 40px;
+}
+.architecture-c{
+    margin-bottom: 40px;
+}
+.architectures .architecture-a, .architecture-d{
+    width: 350px;
+    height: 250px;
+}
+.architectures:hover .architecture-d {
+    transform: translate( 0px,-270px);
+}
+.architectures:hover .architecture-a{
+    transform: translate( 0px,270px);
+}
+
 .footer{
     max-width: 95vw;
 }
+
+}
+@media screen and (min-width:577px) and (max-width:932px){
+    .navbar{
+        max-width: 93vw;
+        /* flex-direction: column;
+        align-items: flex-start; */
+        margin-bottom: 20px;
+      }
+      /* .navbar ul{
+          /* flex-direction: column; */
+          /* position: relative;
+          left: -20px;
+      } */
+      .banner{
+          max-width: 93vw;
+      }
+      .main{
+          max-width: 93vw;
+      }
+      .features{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+      }
+      .features .container-a{
+        max-width: 100%;
+      }
+      .features .container-a .heading{
+        max-width: 100%;
+      }
+      .features .container-b {
+        width: 45vw;
+        height: 60.3vw;
+      }
+      .experience{
+        position: relative;
+        width: 30%;
+        top: -32vw ;
+        font-size: 29px;
+      }
 }
